@@ -20,9 +20,9 @@ public class FileLoader implements Runnable {
         this.fileSize = getFileSize(FILE_URL);
     }
 
-    public StringBuilder getInfo() {
+    public StringBuffer getInfo() {
         setStatus();
-        StringBuilder sb = new StringBuilder(System.lineSeparator());
+        StringBuffer sb = new StringBuffer(System.lineSeparator());
         sb.append(String.format("%-10s", "Name: " + getFileName() + "\n")).
                 append(String.format("%-10s", " Status: " + status + "\n")).
                 append(String.format("%-10s", " Bytes downloaded at the moment: " + getBytesCount() + "\n")).
