@@ -47,9 +47,6 @@ public class FileLoader implements Runnable {
     }
 
     private long getBytesCount() {
-        if (!CURR_FILE.exists()){
-            System.out.println("We're fucked up");
-        }
         return CURR_FILE.length();
     }
 
